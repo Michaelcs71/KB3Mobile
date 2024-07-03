@@ -206,10 +206,10 @@
                 tools:layout_editor_absoluteY="1161dp" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/textView20"
                 android:layout_width="126dp"
                 android:layout_height="46dp"
-                android:text="HowL's Moving Castle"
+                android:text="HowL's Moving CasTle"
                 android:textColor="@color/white"
                 android:textSize="15dp"
                 android:textStyle="bold"
