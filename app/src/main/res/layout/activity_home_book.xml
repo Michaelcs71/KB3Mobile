@@ -5,171 +5,281 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#CD2F87D8"
+    android:background="#2A1C0F"
     tools:context=".HomeBook">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="397dp"
-        android:layout_height="49dp"
-        android:backgroundTint="#F3EEEE"
-        android:text="Search"
-        android:textColor="@color/black"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="110dp" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="68dp"
-        android:layout_height="78dp"
-        app:srcCompat="@drawable/img_10"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Welcome"
-        android:textColor="@color/white"
-        android:textSize="25dp"
-        tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:orientation="vertical"
+        android:layout_marginTop="70dp"
+        tools:ignore="MissingConstraints">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Your_bestie"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="67dp" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Category"
-        android:textColor="@color/white"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="170dp" />
+            <ImageView
+                android:id="@+id/profilhome"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                app:srcCompat="@drawable/profil2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"/>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Baru Datang"
-        android:textColor="@color/white"
-        android:textSize="13dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="317dp" />
+            <TextView
+                android:id="@+id/texthome1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                app:layout_constraintStart_toEndOf="@id/profilhome"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toTopOf="@id/profilhome"
+                android:layout_marginTop="7dp"/>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="See All"
-        android:textColor="@color/white"
-        android:textSize="13dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="357dp"
-        tools:layout_editor_absoluteY="317dp" />
+            <TextView
+                android:id="@+id/texthome2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lala_kiww 👋🏼"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/profilhome"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toBottomOf="@id/texthome1"
+                android:layout_marginTop="4dp" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Dunia Shopie"
-        android:textColor="@color/white"
-        android:textSize="13dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="521dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/profilhome"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="15dp">
+                <EditText
+                    android:id="@+id/search_home"
+                    android:layout_width="370dp"
+                    android:layout_height="40dp"
+                    android:hint="Search for books..."
+                    android:background="@color/white"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Dunia Anna"
-        android:textColor="@color/white"
-        android:textSize="13dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="172dp"
-        tools:layout_editor_absoluteY="521dp" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Laut Bercerita"
-        android:textColor="@color/white"
-        android:textSize="13dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="303dp"
-        tools:layout_editor_absoluteY="521dp" />
+            <TextView
+                android:id="@+id/textcategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/profilhome"
+                android:layout_marginTop="70dp"
+                android:layout_marginStart="25dp"/>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Rekomendasi"
-        android:textColor="@color/white"
-        android:textSize="13dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="564dp" />
+            <Button
+                android:id="@+id/category1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#FFFFFF"
+                android:text="Motivation & Inspiration"
+                app:layout_constraintStart_toStartOf="@id/textcategory"
+                app:layout_constraintTop_toBottomOf="@id/textcategory" />
+            <Button
+                android:id="@+id/category2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="Sains & Physics"
+                app:layout_constraintStart_toEndOf="@id/category1"
+                app:layout_constraintTop_toTopOf="@id/category1"
+                android:layout_marginStart="10dp"/>
+            <Button
+                android:id="@+id/category3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="Kesehatan"
+                app:layout_constraintStart_toStartOf="@id/category1"
+                app:layout_constraintTop_toBottomOf="@id/category1"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:id="@+id/category4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="Horor"
+                app:layout_constraintStart_toEndOf="@id/category3"
+                app:layout_constraintTop_toTopOf="@id/category3"
+                android:layout_marginStart="10dp"/>
+            <Button
+                android:id="@+id/category5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="Komik & Grafis"
+                app:layout_constraintStart_toEndOf="@id/category4"
+                app:layout_constraintTop_toTopOf="@id/category4"
+                android:layout_marginStart="10dp"/>
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="117dp"
-        android:layout_height="159dp"
-        app:srcCompat="@drawable/img"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="354dp" />
+            <TextView
+                android:id="@+id/texthome3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Baru Datang"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/textcategory"
+                app:layout_constraintTop_toBottomOf="@id/category3"
+                android:layout_marginTop="15dp"/>
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="118dp"
-        android:layout_height="160dp"
-        app:srcCompat="@drawable/img_1"
-        tools:layout_editor_absoluteX="146dp"
-        tools:layout_editor_absoluteY="354dp" />
+            <TextView
+                android:id="@+id/texthome4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See All"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/texthome3"
+                android:layout_marginEnd="20dp"/>
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="102dp"
-        android:layout_height="160dp"
-        app:srcCompat="@drawable/img_2"
-        tools:layout_editor_absoluteX="293dp"
-        tools:layout_editor_absoluteY="354dp" />
+            <!--baru datang-->
+            <HorizontalScrollView
+                android:id="@+id/coming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/texthome3"
+                android:layout_marginTop="10dp">
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="158dp"
-        android:layout_height="93dp"
-        app:srcCompat="@drawable/img_11"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="602dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="207dp"
-        android:layout_height="92dp"
-        app:srcCompat="@drawable/img_12"
-        tools:layout_editor_absoluteX="146dp"
-        tools:layout_editor_absoluteY="603dp" />
+                    <ImageView
+                        android:id="@+id/coming1"
+                        android:layout_width="100dp"
+                        android:layout_height="155dp"
+                        app:srcCompat="@drawable/img"/>
+                    <TextView
+                        android:id="@+id/textcoming1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dunia Shopie"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="155dp"
+                        android:layout_marginStart="-90dp"/>
 
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="241dp"
-        android:layout_height="93dp"
-        app:srcCompat="@drawable/img_13"
-        tools:layout_editor_absoluteX="284dp"
-        tools:layout_editor_absoluteY="603dp" />
+                    <ImageView
+                        android:id="@+id/coming2"
+                        android:layout_width="100dp"
+                        android:layout_height="155dp"
+                        app:srcCompat="@drawable/img_1"
+                        android:layout_marginStart="30dp"/>
+                    <TextView
+                        android:id="@+id/textcoming2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dunia Anna"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="155dp"
+                        android:layout_marginStart="-85dp"/>
 
+                    <ImageView
+                        android:id="@+id/coming3"
+                        android:layout_width="100dp"
+                        android:layout_height="155dp"
+                        app:srcCompat="@drawable/img_2"
+                        android:layout_marginStart="35dp"/>
+                    <TextView
+                        android:id="@+id/textcoming3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Laut Bercerita"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="155dp"
+                        android:layout_marginStart="-93dp" />
+
+                    <ImageView
+                        android:id="@+id/coming4"
+                        android:layout_width="100dp"
+                        android:layout_height="155dp"
+                        app:srcCompat="@drawable/img_18"
+                        android:layout_marginStart="35dp"/>
+                    <TextView
+                        android:id="@+id/textcoming4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pulang Pergi"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="155dp"
+                        android:layout_marginStart="-90dp" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!--rekomendasi-->
+            <TextView
+                android:id="@+id/textrekom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rekomendasi"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/coming"
+                app:layout_constraintStart_toStartOf="@id/texthome3"
+                android:layout_marginTop="15dp"/>
+
+            <ImageView
+                android:id="@+id/imagerekom1"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/img_11"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textrekom"
+                android:layout_marginTop="10dp"/>
+            <ImageView
+                android:id="@+id/imagerekom2"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/img_12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imagerekom1"
+                android:layout_marginTop="10dp" />
+            <ImageView
+                android:id="@+id/imagerekom3"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/img_13"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imagerekom2"
+                android:layout_marginTop="10dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
