@@ -1,34 +1,46 @@
-com.example.kuisbesarmobileketiga.app-emoji2-1.3.0-0 C:\Users\HP\.gradle\caches\transforms-3\224ba8e4014c13162ae23414cd1015fe\transformed\emoji2-1.3.0\res
-com.example.kuisbesarmobileketiga.app-startup-runtime-1.1.1-1 C:\Users\HP\.gradle\caches\transforms-3\36bba422d8462af035e1bfefe91f034e\transformed\startup-runtime-1.1.1\res
-com.example.kuisbesarmobileketiga.app-transition-1.5.0-2 C:\Users\HP\.gradle\caches\transforms-3\41e5d047d4e730faeb777814608a427a\transformed\transition-1.5.0\res
-com.example.kuisbesarmobileketiga.app-constraintlayout-2.1.4-3 C:\Users\HP\.gradle\caches\transforms-3\4427a87fc164e9e78112bccac44a0f75\transformed\constraintlayout-2.1.4\res
-com.example.kuisbesarmobileketiga.app-appcompat-resources-1.7.0-4 C:\Users\HP\.gradle\caches\transforms-3\45f0edb0645e625cbc707b7272e3a276\transformed\appcompat-resources-1.7.0\res
-com.example.kuisbesarmobileketiga.app-cardview-1.0.0-5 C:\Users\HP\.gradle\caches\transforms-3\5219a95a89ceb4f7d85035e9e2d7982f\transformed\cardview-1.0.0\res
-com.example.kuisbesarmobileketiga.app-coordinatorlayout-1.1.0-6 C:\Users\HP\.gradle\caches\transforms-3\577acfb3b676a92a116520e1005d13ff\transformed\coordinatorlayout-1.1.0\res
-com.example.kuisbesarmobileketiga.app-core-ktx-1.13.0-7 C:\Users\HP\.gradle\caches\transforms-3\61618042d819bea0bf76e91483686678\transformed\core-ktx-1.13.0\res
-com.example.kuisbesarmobileketiga.app-material-1.12.0-8 C:\Users\HP\.gradle\caches\transforms-3\68b8e87b7b060b0739f2348708a2b4fe\transformed\material-1.12.0\res
-com.example.kuisbesarmobileketiga.app-lifecycle-runtime-2.6.2-9 C:\Users\HP\.gradle\caches\transforms-3\6ae599b3cc7be6b60f4dcf56e0e1a158\transformed\lifecycle-runtime-2.6.2\res
-com.example.kuisbesarmobileketiga.app-lifecycle-livedata-2.6.2-10 C:\Users\HP\.gradle\caches\transforms-3\716c4e7ee75f18a302c45577553578ea\transformed\lifecycle-livedata-2.6.2\res
-com.example.kuisbesarmobileketiga.app-viewpager2-1.0.0-11 C:\Users\HP\.gradle\caches\transforms-3\738349aea8c206e80b1461f5311428a2\transformed\viewpager2-1.0.0\res
-com.example.kuisbesarmobileketiga.app-lifecycle-process-2.6.2-12 C:\Users\HP\.gradle\caches\transforms-3\7528188620f01776a1e88a9a21b54edd\transformed\lifecycle-process-2.6.2\res
-com.example.kuisbesarmobileketiga.app-annotation-experimental-1.4.0-13 C:\Users\HP\.gradle\caches\transforms-3\89fcd129e70cf6b6d6766fe02ec3b631\transformed\annotation-experimental-1.4.0\res
-com.example.kuisbesarmobileketiga.app-core-runtime-2.2.0-14 C:\Users\HP\.gradle\caches\transforms-3\a0fd41a035de694f719f1d9180de55f4\transformed\core-runtime-2.2.0\res
-com.example.kuisbesarmobileketiga.app-lifecycle-viewmodel-savedstate-2.6.2-15 C:\Users\HP\.gradle\caches\transforms-3\adda58d26073880444c515cb7b0cf020\transformed\lifecycle-viewmodel-savedstate-2.6.2\res
-com.example.kuisbesarmobileketiga.app-profileinstaller-1.3.1-16 C:\Users\HP\.gradle\caches\transforms-3\c37831137f560171d980b69f5a3f61e6\transformed\profileinstaller-1.3.1\res
-com.example.kuisbesarmobileketiga.app-fragment-1.5.4-17 C:\Users\HP\.gradle\caches\transforms-3\c86adea8b0173e069473643ebf4f43b4\transformed\fragment-1.5.4\res
-com.example.kuisbesarmobileketiga.app-activity-1.8.0-18 C:\Users\HP\.gradle\caches\transforms-3\d12b8fa79ce0f151a617d45af8da5bd0\transformed\activity-1.8.0\res
-com.example.kuisbesarmobileketiga.app-recyclerview-1.1.0-19 C:\Users\HP\.gradle\caches\transforms-3\e672a49e0171c3769689c41a76b0815e\transformed\recyclerview-1.1.0\res
-com.example.kuisbesarmobileketiga.app-lifecycle-livedata-core-2.6.2-20 C:\Users\HP\.gradle\caches\transforms-3\e916978b7eac2cd38162e8fba68c13ca\transformed\lifecycle-livedata-core-2.6.2\res
-com.example.kuisbesarmobileketiga.app-lifecycle-viewmodel-2.6.2-21 C:\Users\HP\.gradle\caches\transforms-3\ecd7902ff4d19be47d87ccf9b465a237\transformed\lifecycle-viewmodel-2.6.2\res
-com.example.kuisbesarmobileketiga.app-emoji2-views-helper-1.3.0-22 C:\Users\HP\.gradle\caches\transforms-3\f5ef2cb6f047d1efcd61a6011ed591fa\transformed\emoji2-views-helper-1.3.0\res
-com.example.kuisbesarmobileketiga.app-appcompat-1.7.0-23 C:\Users\HP\.gradle\caches\transforms-3\f84f53934e034aa6d47b1c8a0ceae1d9\transformed\appcompat-1.7.0\res
-com.example.kuisbesarmobileketiga.app-savedstate-1.2.1-24 C:\Users\HP\.gradle\caches\transforms-3\fc23832b46807a12b85b5a819f615985\transformed\savedstate-1.2.1\res
-com.example.kuisbesarmobileketiga.app-drawerlayout-1.1.1-25 C:\Users\HP\.gradle\caches\transforms-3\fcb192f90ae7f0a2f7ce2a51a76b7688\transformed\drawerlayout-1.1.1\res
-com.example.kuisbesarmobileketiga.app-core-1.13.0-26 C:\Users\HP\.gradle\caches\transforms-3\fe3340dd81ffb6b64106c6885861a01e\transformed\core-1.13.0\res
-com.example.kuisbesarmobileketiga.app-pngs-27 C:\xampp\htdocs\KB3Mobile\app\build\generated\res\pngs\debug
-com.example.kuisbesarmobileketiga.app-resValues-28 C:\xampp\htdocs\KB3Mobile\app\build\generated\res\resValues\debug
-com.example.kuisbesarmobileketiga.app-packageDebugResources-29 C:\xampp\htdocs\KB3Mobile\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.example.kuisbesarmobileketiga.app-packageDebugResources-30 C:\xampp\htdocs\KB3Mobile\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.example.kuisbesarmobileketiga.app-debug-31 C:\xampp\htdocs\KB3Mobile\app\build\intermediates\merged_res\debug\mergeDebugResources
-com.example.kuisbesarmobileketiga.app-debug-32 C:\xampp\htdocs\KB3Mobile\app\src\debug\res
-com.example.kuisbesarmobileketiga.app-main-33 C:\xampp\htdocs\KB3Mobile\app\src\main\res
+com.example.kuisbesarmobileketiga.app-transition-1.5.0-0 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\0245d553948f3c3a09cbb4fa07c0a75d\transformed\transition-1.5.0\res
+com.example.kuisbesarmobileketiga.app-lifecycle-livedata-2.6.2-1 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\04e9c4b640df5d7f2217fbf85ca51486\transformed\lifecycle-livedata-2.6.2\res
+com.example.kuisbesarmobileketiga.app-material-1.12.0-2 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\05b52001daa1dfe0fe7355e9b20ab34d\transformed\material-1.12.0\res
+com.example.kuisbesarmobileketiga.app-lifecycle-runtime-2.6.2-3 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\12e88860a062231c63e4ee2128fe1589\transformed\lifecycle-runtime-2.6.2\res
+com.example.kuisbesarmobileketiga.app-startup-runtime-1.1.1-4 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\12f83cf89c706be8aa1c753332760b24\transformed\startup-runtime-1.1.1\res
+com.example.kuisbesarmobileketiga.app-lifecycle-viewmodel-savedstate-2.6.2-5 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\131a24a9bf85fec468060756ac90546d\transformed\lifecycle-viewmodel-savedstate-2.6.2\res
+com.example.kuisbesarmobileketiga.app-lifecycle-viewmodel-ktx-2.6.2-6 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\21274072d1a61728059a091bb29bbe64\transformed\lifecycle-viewmodel-ktx-2.6.2\res
+com.example.kuisbesarmobileketiga.app-coordinatorlayout-1.1.0-7 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\26f4675ab20433b0f7ea09103b48f9d2\transformed\coordinatorlayout-1.1.0\res
+com.example.kuisbesarmobileketiga.app-lifecycle-livedata-core-ktx-2.6.2-8 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\26faae38c57eb3c735eb6bbec4797706\transformed\lifecycle-livedata-core-ktx-2.6.2\res
+com.example.kuisbesarmobileketiga.app-activity-ktx-1.8.0-9 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\28f26fe6b2abaf97497315ccd88d4286\transformed\activity-ktx-1.8.0\res
+com.example.kuisbesarmobileketiga.app-navigation-ui-2.7.7-10 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\3008251b89c0af56f1451c070b1b3096\transformed\navigation-ui-2.7.7\res
+com.example.kuisbesarmobileketiga.app-savedstate-1.2.1-11 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\30c09a6a5c111301e471510b595fa5b5\transformed\savedstate-1.2.1\res
+com.example.kuisbesarmobileketiga.app-lifecycle-runtime-ktx-2.6.2-12 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\366f2b058fcccf233274e4f2ec87000a\transformed\lifecycle-runtime-ktx-2.6.2\res
+com.example.kuisbesarmobileketiga.app-recyclerview-1.1.0-13 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\370cc9f3fb0327f11d761ca35f7e76b9\transformed\recyclerview-1.1.0\res
+com.example.kuisbesarmobileketiga.app-lifecycle-viewmodel-2.6.2-14 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\3c337a6293f5acb42bce31462bcbd115\transformed\lifecycle-viewmodel-2.6.2\res
+com.example.kuisbesarmobileketiga.app-emoji2-views-helper-1.3.0-15 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\5432d4ec900e1b824b4dab11bdcb94a3\transformed\emoji2-views-helper-1.3.0\res
+com.example.kuisbesarmobileketiga.app-appcompat-1.7.0-16 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\5a3d58b971f8f15ddfe8d7c794427282\transformed\appcompat-1.7.0\res
+com.example.kuisbesarmobileketiga.app-drawerlayout-1.1.1-17 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\5a6a2ad57f1fb0647346e46b227259f8\transformed\drawerlayout-1.1.1\res
+com.example.kuisbesarmobileketiga.app-lifecycle-process-2.6.2-18 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\659fc121f79dfd11f12aa7b39112084d\transformed\lifecycle-process-2.6.2\res
+com.example.kuisbesarmobileketiga.app-fragment-ktx-1.6.2-19 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\71a217ff3578232b898f8c10edb3953d\transformed\fragment-ktx-1.6.2\res
+com.example.kuisbesarmobileketiga.app-savedstate-ktx-1.2.1-20 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\76ada1290d4f21d279f7dbaa73d6cc29\transformed\savedstate-ktx-1.2.1\res
+com.example.kuisbesarmobileketiga.app-navigation-common-2.7.7-21 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\7b4a2818fdd730337ceec91faad7003c\transformed\navigation-common-2.7.7\res
+com.example.kuisbesarmobileketiga.app-profileinstaller-1.3.1-22 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\7cf3d940b52c0b3eca66aeb136e360e4\transformed\profileinstaller-1.3.1\res
+com.example.kuisbesarmobileketiga.app-navigation-runtime-2.7.7-23 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\7f8d9348faaaaffe45667bb273ace5b7\transformed\navigation-runtime-2.7.7\res
+com.example.kuisbesarmobileketiga.app-viewpager2-1.0.0-24 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\80e0f75b3a4bdd9bf9b4e988cf068e0e\transformed\viewpager2-1.0.0\res
+com.example.kuisbesarmobileketiga.app-annotation-experimental-1.4.0-25 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\811d408396c9745d496261c5d71e4c05\transformed\annotation-experimental-1.4.0\res
+com.example.kuisbesarmobileketiga.app-lifecycle-livedata-core-2.6.2-26 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\8173fcce0737fe93be9e68cbbc0750a1\transformed\lifecycle-livedata-core-2.6.2\res
+com.example.kuisbesarmobileketiga.app-constraintlayout-2.1.4-27 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\83850fdc06dcec6abcd2b00aa3f174e4\transformed\constraintlayout-2.1.4\res
+com.example.kuisbesarmobileketiga.app-core-runtime-2.2.0-28 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\9c5aebc1a1ee14a9ba6fc098e15fadaa\transformed\core-runtime-2.2.0\res
+com.example.kuisbesarmobileketiga.app-appcompat-resources-1.7.0-29 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\9f41c6a5f6fddcf9e9179081602fe09d\transformed\appcompat-resources-1.7.0\res
+com.example.kuisbesarmobileketiga.app-navigation-fragment-2.7.7-30 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\a84b67dbc344fba1f2ed22907f3c16b4\transformed\navigation-fragment-2.7.7\res
+com.example.kuisbesarmobileketiga.app-slidingpanelayout-1.2.0-31 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\aa054d19c6c3f1f8e0ec0ab5aed89612\transformed\slidingpanelayout-1.2.0\res
+com.example.kuisbesarmobileketiga.app-window-1.0.0-32 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\c41a6b3b24d91ea9e20d8283f583de50\transformed\window-1.0.0\res
+com.example.kuisbesarmobileketiga.app-core-1.13.0-33 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\d7f6bcdb0e1d6a5fdf6cdba9ab3b3771\transformed\core-1.13.0\res
+com.example.kuisbesarmobileketiga.app-fragment-1.6.2-34 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\eb0bc988677fcdd920f9ae49942780eb\transformed\fragment-1.6.2\res
+com.example.kuisbesarmobileketiga.app-activity-1.8.0-35 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\f52d1b41cc73fa4af3a01c2617c83ba6\transformed\activity-1.8.0\res
+com.example.kuisbesarmobileketiga.app-core-ktx-1.13.0-36 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\fa43861d2414220cee0b342b7428ece4\transformed\core-ktx-1.13.0\res
+com.example.kuisbesarmobileketiga.app-emoji2-1.3.0-37 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\fb92718042f0825c0e30edd28af877b4\transformed\emoji2-1.3.0\res
+com.example.kuisbesarmobileketiga.app-cardview-1.0.0-38 C:\Users\Kamila Mariska\.gradle\caches\transforms-3\fd00c0e396077c64fa5684c38cb41e35\transformed\cardview-1.0.0\res
+com.example.kuisbesarmobileketiga.app-pngs-39 C:\Users\Kamila Mariska\AndroidStudioProjects\KB3-Mobile\app\build\generated\res\pngs\debug
+com.example.kuisbesarmobileketiga.app-resValues-40 C:\Users\Kamila Mariska\AndroidStudioProjects\KB3-Mobile\app\build\generated\res\resValues\debug
+com.example.kuisbesarmobileketiga.app-packageDebugResources-41 C:\Users\Kamila Mariska\AndroidStudioProjects\KB3-Mobile\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.kuisbesarmobileketiga.app-packageDebugResources-42 C:\Users\Kamila Mariska\AndroidStudioProjects\KB3-Mobile\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.kuisbesarmobileketiga.app-debug-43 C:\Users\Kamila Mariska\AndroidStudioProjects\KB3-Mobile\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.example.kuisbesarmobileketiga.app-debug-44 C:\Users\Kamila Mariska\AndroidStudioProjects\KB3-Mobile\app\src\debug\res
+com.example.kuisbesarmobileketiga.app-main-45 C:\Users\Kamila Mariska\AndroidStudioProjects\KB3-Mobile\app\src\main\res
