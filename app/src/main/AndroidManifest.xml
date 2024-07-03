@@ -13,6 +13,9 @@
         android:theme="@style/Theme.KuisBesarMobileKetiga"
         tools:targetApi="31">
         <activity
+            android:name=".akun"
+            android:exported="false" />
+        <activity
             android:name=".HomeBook"
             android:exported="false" />
         <activity
