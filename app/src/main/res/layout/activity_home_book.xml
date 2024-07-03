@@ -13,8 +13,9 @@
         android:id="@+id/button"
         android:layout_width="397dp"
         android:layout_height="49dp"
-        android:backgroundTint="#ECDFDF"
-        android:text="Button"
+        android:backgroundTint="#F3EEEE"
+        android:text="Search"
+        android:textColor="@color/black"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="110dp" />
 
@@ -171,15 +172,5 @@
         app:srcCompat="@drawable/img_13"
         tools:layout_editor_absoluteX="284dp"
         tools:layout_editor_absoluteY="603dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="444dp"
-        android:layout_height="60dp"
-        android:background="#EDE0E0"
-        android:backgroundTint="#040303"
-        android:text="Button"
-        tools:layout_editor_absoluteX="-3dp"
-        tools:layout_editor_absoluteY="724dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
