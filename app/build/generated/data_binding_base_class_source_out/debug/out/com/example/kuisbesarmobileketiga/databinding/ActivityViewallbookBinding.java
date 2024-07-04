@@ -64,9 +64,6 @@ public final class ActivityViewallbookBinding implements ViewBinding {
   public final ImageView homebook7;
 
   @NonNull
-  public final ConstraintLayout main;
-
-  @NonNull
   public final TextView textbook1;
 
   @NonNull
@@ -87,14 +84,18 @@ public final class ActivityViewallbookBinding implements ViewBinding {
   @NonNull
   public final TextView textbook7;
 
+  @NonNull
+  public final ConstraintLayout viewallbook;
+
   private ActivityViewallbookBinding(@NonNull ConstraintLayout rootView, @NonNull Button button1,
       @NonNull Button button2, @NonNull Button button3, @NonNull Button button4,
       @NonNull Button button5, @NonNull Button button6, @NonNull Button button7,
       @NonNull ImageView homebook1, @NonNull ImageView homebook2, @NonNull ImageView homebook3,
       @NonNull ImageView homebook4, @NonNull ImageView homebook5, @NonNull ImageView homebook6,
-      @NonNull ImageView homebook7, @NonNull ConstraintLayout main, @NonNull TextView textbook1,
-      @NonNull TextView textbook2, @NonNull TextView textbook3, @NonNull TextView textbook4,
-      @NonNull TextView textbook5, @NonNull TextView textbook6, @NonNull TextView textbook7) {
+      @NonNull ImageView homebook7, @NonNull TextView textbook1, @NonNull TextView textbook2,
+      @NonNull TextView textbook3, @NonNull TextView textbook4, @NonNull TextView textbook5,
+      @NonNull TextView textbook6, @NonNull TextView textbook7,
+      @NonNull ConstraintLayout viewallbook) {
     this.rootView = rootView;
     this.button1 = button1;
     this.button2 = button2;
@@ -110,7 +111,6 @@ public final class ActivityViewallbookBinding implements ViewBinding {
     this.homebook5 = homebook5;
     this.homebook6 = homebook6;
     this.homebook7 = homebook7;
-    this.main = main;
     this.textbook1 = textbook1;
     this.textbook2 = textbook2;
     this.textbook3 = textbook3;
@@ -118,6 +118,7 @@ public final class ActivityViewallbookBinding implements ViewBinding {
     this.textbook5 = textbook5;
     this.textbook6 = textbook6;
     this.textbook7 = textbook7;
+    this.viewallbook = viewallbook;
   }
 
   @Override
@@ -231,8 +232,6 @@ public final class ActivityViewallbookBinding implements ViewBinding {
         break missingId;
       }
 
-      ConstraintLayout main = (ConstraintLayout) rootView;
-
       id = R.id.textbook1;
       TextView textbook1 = ViewBindings.findChildViewById(rootView, id);
       if (textbook1 == null) {
@@ -275,10 +274,12 @@ public final class ActivityViewallbookBinding implements ViewBinding {
         break missingId;
       }
 
+      ConstraintLayout viewallbook = (ConstraintLayout) rootView;
+
       return new ActivityViewallbookBinding((ConstraintLayout) rootView, button1, button2, button3,
           button4, button5, button6, button7, homebook1, homebook2, homebook3, homebook4, homebook5,
-          homebook6, homebook7, main, textbook1, textbook2, textbook3, textbook4, textbook5,
-          textbook6, textbook7);
+          homebook6, homebook7, textbook1, textbook2, textbook3, textbook4, textbook5, textbook6,
+          textbook7, viewallbook);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -12,6 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 public class halaman_login extends AppCompatActivity {
 
@@ -44,7 +46,8 @@ public class halaman_login extends AppCompatActivity {
 
                     if (db.checkUser(Username, Password)) {
                         Toast.makeText(halaman_login.this, "Login successful, " + username + "!", Toast.LENGTH_SHORT).show();
-                    } else {
+                    }
+                    else {
                         Toast.makeText(halaman_login.this, "Invalid username or password", Toast.LENGTH_SHORT).show();
                     }
                 }
@@ -57,4 +60,15 @@ public class halaman_login extends AppCompatActivity {
                 }
             });
         }
+    private void openHomeFragment() {
+        // Create a new instance of the home fragment
+        Fragment homeFragment = new HomeFragment();
+
+        // Replace the current fragment with the home fragment
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.login, homeFragment);
+        transaction.addToBackStack(null); // Optional: add to back stack to allow back navigation
+        transaction.commit();
     }
+}
+

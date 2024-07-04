@@ -16,8 +16,12 @@ public final class FragmentHistoryBinding implements ViewBinding {
   @NonNull
   private final FrameLayout rootView;
 
-  private FragmentHistoryBinding(@NonNull FrameLayout rootView) {
+  @NonNull
+  public final FrameLayout history;
+
+  private FragmentHistoryBinding(@NonNull FrameLayout rootView, @NonNull FrameLayout history) {
     this.rootView = rootView;
+    this.history = history;
   }
 
   @Override
@@ -47,6 +51,8 @@ public final class FragmentHistoryBinding implements ViewBinding {
       throw new NullPointerException("rootView");
     }
 
-    return new FragmentHistoryBinding((FrameLayout) rootView);
+    FrameLayout history = (FrameLayout) rootView;
+
+    return new FragmentHistoryBinding((FrameLayout) rootView, history);
   }
 }

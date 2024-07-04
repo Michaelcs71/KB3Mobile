@@ -27,15 +27,15 @@ public final class ActivityHomeBinding implements ViewBinding {
   public final FrameLayout flFragment;
 
   @NonNull
-  public final ConstraintLayout main;
+  public final ConstraintLayout fragment;
 
   private ActivityHomeBinding(@NonNull ConstraintLayout rootView,
       @NonNull BottomNavigationView bottomNavigationView, @NonNull FrameLayout flFragment,
-      @NonNull ConstraintLayout main) {
+      @NonNull ConstraintLayout fragment) {
     this.rootView = rootView;
     this.bottomNavigationView = bottomNavigationView;
     this.flFragment = flFragment;
-    this.main = main;
+    this.fragment = fragment;
   }
 
   @Override
@@ -77,10 +77,10 @@ public final class ActivityHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      ConstraintLayout main = (ConstraintLayout) rootView;
+      ConstraintLayout fragment = (ConstraintLayout) rootView;
 
       return new ActivityHomeBinding((ConstraintLayout) rootView, bottomNavigationView, flFragment,
-          main);
+          fragment);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

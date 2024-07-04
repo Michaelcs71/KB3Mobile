@@ -21,7 +21,7 @@ public final class FragmentAccountBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
-  public final RelativeLayout akun;
+  public final RelativeLayout account;
 
   @NonNull
   public final ImageView backAkun;
@@ -32,10 +32,10 @@ public final class FragmentAccountBinding implements ViewBinding {
   @NonNull
   public final ImageView profil;
 
-  private FragmentAccountBinding(@NonNull RelativeLayout rootView, @NonNull RelativeLayout akun,
+  private FragmentAccountBinding(@NonNull RelativeLayout rootView, @NonNull RelativeLayout account,
       @NonNull ImageView backAkun, @NonNull CardView cardProfil, @NonNull ImageView profil) {
     this.rootView = rootView;
-    this.akun = akun;
+    this.account = account;
     this.backAkun = backAkun;
     this.cardProfil = cardProfil;
     this.profil = profil;
@@ -68,7 +68,7 @@ public final class FragmentAccountBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      RelativeLayout akun = (RelativeLayout) rootView;
+      RelativeLayout account = (RelativeLayout) rootView;
 
       id = R.id.back_akun;
       ImageView backAkun = ViewBindings.findChildViewById(rootView, id);
@@ -88,7 +88,7 @@ public final class FragmentAccountBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentAccountBinding((RelativeLayout) rootView, akun, backAkun, cardProfil,
+      return new FragmentAccountBinding((RelativeLayout) rootView, account, backAkun, cardProfil,
           profil);
     }
     String missingId = rootView.getResources().getResourceName(id);

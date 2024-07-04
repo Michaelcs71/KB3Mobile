@@ -1,14 +1,327 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/book"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#2A1C0F"
     tools:context=".BookFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-</FrameLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/backbook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="30dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:id="@+id/homebook1"
+                android:layout_width="200dp"
+                android:layout_height="130dp"
+                app:srcCompat="@drawable/img_11"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toBottomOf="@id/backbook"
+                android:layout_marginTop="30dp"/>
+            <TextView
+                android:id="@+id/textbook1"
+                android:layout_width="126dp"
+                android:layout_height="46dp"
+                android:text="Hundred Years of Hapiness"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/homebook1"
+                android:layout_marginStart="30dp"
+                app:layout_constraintTop_toTopOf="@id/homebook1"/>
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Baca"
+                app:layout_constraintStart_toStartOf="@id/textbook1"
+                app:layout_constraintEnd_toEndOf="@id/textbook1"
+                app:layout_constraintBottom_toBottomOf="@id/homebook1"/>
+
+            <ImageView
+                android:id="@+id/homebook2"
+                android:layout_width="200dp"
+                android:layout_height="130dp"
+                app:srcCompat="@drawable/img_12"
+                app:layout_constraintTop_toBottomOf="@id/homebook1"
+                android:layout_marginTop="40dp"
+                app:layout_constraintStart_toStartOf="@id/homebook1"/>
+            <TextView
+                android:id="@+id/textbook2"
+                android:layout_width="126dp"
+                android:layout_height="46dp"
+                android:text="The Floating Field"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/homebook2"
+                android:layout_marginStart="30dp"
+                app:layout_constraintTop_toTopOf="@id/homebook2"/>
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Baca"
+                app:layout_constraintStart_toStartOf="@id/textbook2"
+                app:layout_constraintEnd_toEndOf="@id/textbook2"
+                app:layout_constraintBottom_toBottomOf="@id/homebook2"/>
+
+            <ImageView
+                android:id="@+id/homebook3"
+                android:layout_width="200dp"
+                android:layout_height="130dp"
+                app:srcCompat="@drawable/img_13"
+                app:layout_constraintTop_toBottomOf="@id/homebook2"
+                android:layout_marginTop="40dp"
+                app:layout_constraintStart_toStartOf="@id/homebook2"/>
+            <TextView
+                android:id="@+id/textbook3"
+                android:layout_width="126dp"
+                android:layout_height="46dp"
+                android:text="Koh Panyee, Thailand, 19983"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/homebook3"
+                android:layout_marginStart="30dp"
+                app:layout_constraintTop_toTopOf="@id/homebook3"/>
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Baca"
+                app:layout_constraintStart_toStartOf="@id/textbook3"
+                app:layout_constraintEnd_toEndOf="@id/textbook3"
+                app:layout_constraintBottom_toBottomOf="@id/homebook3"/>
+
+
+            <ImageView
+                android:id="@+id/homebook4"
+                android:layout_width="200dp"
+                android:layout_height="130dp"
+                app:srcCompat="@drawable/img_14"
+                app:layout_constraintTop_toBottomOf="@id/homebook3"
+                android:layout_marginTop="40dp"
+                app:layout_constraintStart_toStartOf="@id/homebook3"/>
+            <TextView
+                android:id="@+id/textbook4"
+                android:layout_width="126dp"
+                android:layout_height="46dp"
+                android:text="A Stick is an Excellent Thing"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/homebook4"
+                android:layout_marginStart="30dp"
+                app:layout_constraintTop_toTopOf="@id/homebook4"/>
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Baca"
+                app:layout_constraintStart_toStartOf="@id/textbook4"
+                app:layout_constraintEnd_toEndOf="@id/textbook4"
+                app:layout_constraintBottom_toBottomOf="@id/homebook4"/>
+
+            <ImageView
+                android:id="@+id/homebook5"
+                android:layout_width="200dp"
+                android:layout_height="130dp"
+                app:srcCompat="@drawable/img_15"
+                app:layout_constraintTop_toBottomOf="@id/homebook4"
+                android:layout_marginTop="40dp"
+                app:layout_constraintStart_toStartOf="@id/homebook4"/>
+            <TextView
+                android:id="@+id/textbook5"
+                android:layout_width="126dp"
+                android:layout_height="46dp"
+                android:text="Hundred Years of Hapiness 2"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/homebook5"
+                android:layout_marginStart="30dp"
+                app:layout_constraintTop_toTopOf="@id/homebook5"/>
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Baca"
+                app:layout_constraintStart_toStartOf="@id/textbook5"
+                app:layout_constraintEnd_toEndOf="@id/textbook5"
+                app:layout_constraintBottom_toBottomOf="@id/homebook5"/>
+            <ImageView
+                android:id="@+id/homebook6"
+                android:layout_width="200dp"
+                android:layout_height="130dp"
+                app:srcCompat="@drawable/img_16"
+                app:layout_constraintTop_toBottomOf="@id/homebook5"
+                android:layout_marginTop="40dp"
+                app:layout_constraintStart_toStartOf="@id/homebook5"/>
+            <TextView
+                android:id="@+id/textbook6"
+                android:layout_width="126dp"
+                android:layout_height="46dp"
+                android:text="Dragon!!!"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/homebook6"
+                android:layout_marginStart="30dp"
+                app:layout_constraintTop_toTopOf="@id/homebook6"/>
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Baca"
+                app:layout_constraintStart_toStartOf="@id/textbook6"
+                app:layout_constraintEnd_toEndOf="@id/textbook6"
+                app:layout_constraintBottom_toBottomOf="@id/homebook6"/>
+
+            <ImageView
+                android:id="@+id/homebook7"
+                android:layout_width="200dp"
+                android:layout_height="130dp"
+                app:srcCompat="@drawable/img_17"
+                app:layout_constraintTop_toBottomOf="@id/homebook6"
+                android:layout_marginTop="40dp"
+                app:layout_constraintStart_toStartOf="@id/homebook6"/>
+            <TextView
+                android:id="@+id/textbook7"
+                android:layout_width="126dp"
+                android:layout_height="46dp"
+                android:text="HowL's Moving CasTle"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/homebook7"
+                android:layout_marginStart="30dp"
+                app:layout_constraintTop_toTopOf="@id/homebook7"/>
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Baca"
+                app:layout_constraintStart_toStartOf="@id/textbook7"
+                app:layout_constraintEnd_toEndOf="@id/textbook7"
+                app:layout_constraintBottom_toBottomOf="@id/homebook7"/>
+
+            <TextView
+                android:id="@+id/booklainnya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lainnya"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                app:layout_constraintTop_toBottomOf="@id/homebook7"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="@id/homebook7"/>
+
+            <!--lainnya-->
+            <ImageView
+                android:id="@+id/booklainnya1"
+                android:layout_width="340dp"
+                android:layout_height="220dp"
+                android:src="@drawable/img_19"
+                android:onClick="detailbook"
+                app:layout_constraintTop_toBottomOf="@id/booklainnya"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+            <TextView
+                android:id="@+id/textlainnya1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mereka Yang Tak Berbahagia"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/booklainnya1"
+                app:layout_constraintEnd_toEndOf="@id/booklainnya1"
+                app:layout_constraintTop_toBottomOf="@id/booklainnya1"/>
+
+            <ImageView
+                android:id="@+id/booklainnya2"
+                android:layout_width="340dp"
+                android:layout_height="220dp"
+                android:src="@drawable/img_20"
+                app:layout_constraintTop_toBottomOf="@id/textlainnya1"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+            <TextView
+                android:id="@+id/textlainnya2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yang Tersisa Dari Yang Tersisa"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/booklainnya2"
+                app:layout_constraintEnd_toEndOf="@id/booklainnya2"
+                app:layout_constraintTop_toBottomOf="@id/booklainnya2"/>
+
+            <ImageView
+                android:id="@+id/booklainnya3"
+                android:layout_width="340dp"
+                android:layout_height="220dp"
+                android:src="@drawable/img_21"
+                app:layout_constraintTop_toBottomOf="@id/textlainnya2"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+            <TextView
+                android:id="@+id/textlainnya3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teman Duduk"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/booklainnya3"
+                app:layout_constraintEnd_toEndOf="@id/booklainnya3"
+                app:layout_constraintTop_toBottomOf="@id/booklainnya3"/>
+
+            <ImageView
+                android:id="@+id/booklainnya4"
+                android:layout_width="340dp"
+                android:layout_height="220dp"
+                android:src="@drawable/img_22"
+                app:layout_constraintTop_toBottomOf="@id/textlainnya3"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+            <TextView
+                android:id="@+id/textlainnya4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FARMAKOGNOSI"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/booklainnya4"
+                app:layout_constraintEnd_toEndOf="@id/booklainnya4"
+                app:layout_constraintTop_toBottomOf="@id/booklainnya4"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

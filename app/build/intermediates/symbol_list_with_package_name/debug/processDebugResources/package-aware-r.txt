@@ -3086,7 +3086,13 @@ drawable img_15
 drawable img_16
 drawable img_17
 drawable img_18
+drawable img_19
 drawable img_2
+drawable img_20
+drawable img_21
+drawable img_22
+drawable img_23
+drawable img_24
 drawable img_3
 drawable img_4
 drawable img_5
@@ -3169,11 +3175,13 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable oval_background
-drawable profil
 drawable profil2
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font caster
+font grained
+font kanisa_lucky
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -3224,6 +3232,7 @@ id accessibility_custom_action_6
 id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
+id account
 id actionDown
 id actionDownUp
 id actionUp
@@ -3249,7 +3258,6 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
-id akun
 id alertTitle
 id aligned
 id all
@@ -3267,13 +3275,21 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id baca
 id back_akun
+id backbook
 id barrier
 id baseline
 id beginOnFirstDraw
 id beginning
 id bestChoice
 id blocking
+id book
+id booklainnya
+id booklainnya1
+id booklainnya2
+id booklainnya3
+id booklainnya4
 id bottom
 id bottomNavigationView
 id bounce
@@ -3335,6 +3351,7 @@ id continuousVelocity
 id coordinator
 id cos
 id counterclockwise
+id coverbook
 id cradle
 id currentState
 id custom
@@ -3353,6 +3370,8 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id deskripsibook
+id detailbook
 id dialog_button
 id dimensions
 id direct
@@ -3406,6 +3425,7 @@ id fr_account
 id fr_book
 id fr_history
 id fr_home
+id fragment
 id fragment_container_view_tag
 id frost
 id fullscreen_header
@@ -3422,6 +3442,7 @@ id groups
 id header_title
 id hide_ime_id
 id hideable
+id history
 id home
 id homeAsUp
 id homebook1
@@ -3439,6 +3460,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imagedetail1
 id imagerekom1
 id imagerekom2
 id imagerekom3
@@ -3450,6 +3472,7 @@ id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
+id judulbook
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -3532,6 +3555,7 @@ id nav_controller_view_tag
 id nav_graph
 id nav_host_fragment_container
 id nav_host_fragment_content_halaman_register
+id navbar
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3614,6 +3638,7 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
+id scrollhome
 id search_badge
 id search_bar
 id search_button
@@ -3708,14 +3733,18 @@ id textcoming4
 id texthome1
 id texthome2
 id texthome3
-id texthome4
 id textinput_counter
 id textinput_error
 id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
+id textlainnya1
+id textlainnya2
+id textlainnya3
+id textlainnya4
 id textrekom
+id textseeall
 id textview_first
 id textview_second
 id time
@@ -3750,6 +3779,7 @@ id view_tree_lifecycle_owner
 id view_tree_on_back_pressed_dispatcher_owner
 id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
+id viewallbook
 id visible
 id visible_removing_fragment_view_tag
 id west
@@ -3876,6 +3906,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_detailbook
 layout activity_halaman_login
 layout activity_halaman_register
 layout activity_home

@@ -4,25 +4,170 @@ package com.example.kuisbesarmobileketiga.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.kuisbesarmobileketiga.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class FragmentBookBinding implements ViewBinding {
   @NonNull
-  private final FrameLayout rootView;
+  private final ConstraintLayout rootView;
 
-  private FragmentBookBinding(@NonNull FrameLayout rootView) {
+  @NonNull
+  public final TextView backbook;
+
+  @NonNull
+  public final ConstraintLayout book;
+
+  @NonNull
+  public final TextView booklainnya;
+
+  @NonNull
+  public final ImageView booklainnya1;
+
+  @NonNull
+  public final ImageView booklainnya2;
+
+  @NonNull
+  public final ImageView booklainnya3;
+
+  @NonNull
+  public final ImageView booklainnya4;
+
+  @NonNull
+  public final Button button1;
+
+  @NonNull
+  public final Button button2;
+
+  @NonNull
+  public final Button button3;
+
+  @NonNull
+  public final Button button4;
+
+  @NonNull
+  public final Button button5;
+
+  @NonNull
+  public final Button button6;
+
+  @NonNull
+  public final Button button7;
+
+  @NonNull
+  public final ImageView homebook1;
+
+  @NonNull
+  public final ImageView homebook2;
+
+  @NonNull
+  public final ImageView homebook3;
+
+  @NonNull
+  public final ImageView homebook4;
+
+  @NonNull
+  public final ImageView homebook5;
+
+  @NonNull
+  public final ImageView homebook6;
+
+  @NonNull
+  public final ImageView homebook7;
+
+  @NonNull
+  public final TextView textbook1;
+
+  @NonNull
+  public final TextView textbook2;
+
+  @NonNull
+  public final TextView textbook3;
+
+  @NonNull
+  public final TextView textbook4;
+
+  @NonNull
+  public final TextView textbook5;
+
+  @NonNull
+  public final TextView textbook6;
+
+  @NonNull
+  public final TextView textbook7;
+
+  @NonNull
+  public final TextView textlainnya1;
+
+  @NonNull
+  public final TextView textlainnya2;
+
+  @NonNull
+  public final TextView textlainnya3;
+
+  @NonNull
+  public final TextView textlainnya4;
+
+  private FragmentBookBinding(@NonNull ConstraintLayout rootView, @NonNull TextView backbook,
+      @NonNull ConstraintLayout book, @NonNull TextView booklainnya,
+      @NonNull ImageView booklainnya1, @NonNull ImageView booklainnya2,
+      @NonNull ImageView booklainnya3, @NonNull ImageView booklainnya4, @NonNull Button button1,
+      @NonNull Button button2, @NonNull Button button3, @NonNull Button button4,
+      @NonNull Button button5, @NonNull Button button6, @NonNull Button button7,
+      @NonNull ImageView homebook1, @NonNull ImageView homebook2, @NonNull ImageView homebook3,
+      @NonNull ImageView homebook4, @NonNull ImageView homebook5, @NonNull ImageView homebook6,
+      @NonNull ImageView homebook7, @NonNull TextView textbook1, @NonNull TextView textbook2,
+      @NonNull TextView textbook3, @NonNull TextView textbook4, @NonNull TextView textbook5,
+      @NonNull TextView textbook6, @NonNull TextView textbook7, @NonNull TextView textlainnya1,
+      @NonNull TextView textlainnya2, @NonNull TextView textlainnya3,
+      @NonNull TextView textlainnya4) {
     this.rootView = rootView;
+    this.backbook = backbook;
+    this.book = book;
+    this.booklainnya = booklainnya;
+    this.booklainnya1 = booklainnya1;
+    this.booklainnya2 = booklainnya2;
+    this.booklainnya3 = booklainnya3;
+    this.booklainnya4 = booklainnya4;
+    this.button1 = button1;
+    this.button2 = button2;
+    this.button3 = button3;
+    this.button4 = button4;
+    this.button5 = button5;
+    this.button6 = button6;
+    this.button7 = button7;
+    this.homebook1 = homebook1;
+    this.homebook2 = homebook2;
+    this.homebook3 = homebook3;
+    this.homebook4 = homebook4;
+    this.homebook5 = homebook5;
+    this.homebook6 = homebook6;
+    this.homebook7 = homebook7;
+    this.textbook1 = textbook1;
+    this.textbook2 = textbook2;
+    this.textbook3 = textbook3;
+    this.textbook4 = textbook4;
+    this.textbook5 = textbook5;
+    this.textbook6 = textbook6;
+    this.textbook7 = textbook7;
+    this.textlainnya1 = textlainnya1;
+    this.textlainnya2 = textlainnya2;
+    this.textlainnya3 = textlainnya3;
+    this.textlainnya4 = textlainnya4;
   }
 
   @Override
   @NonNull
-  public FrameLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -43,10 +188,205 @@ public final class FragmentBookBinding implements ViewBinding {
 
   @NonNull
   public static FragmentBookBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.backbook;
+      TextView backbook = ViewBindings.findChildViewById(rootView, id);
+      if (backbook == null) {
+        break missingId;
+      }
 
-    return new FragmentBookBinding((FrameLayout) rootView);
+      ConstraintLayout book = (ConstraintLayout) rootView;
+
+      id = R.id.booklainnya;
+      TextView booklainnya = ViewBindings.findChildViewById(rootView, id);
+      if (booklainnya == null) {
+        break missingId;
+      }
+
+      id = R.id.booklainnya1;
+      ImageView booklainnya1 = ViewBindings.findChildViewById(rootView, id);
+      if (booklainnya1 == null) {
+        break missingId;
+      }
+
+      id = R.id.booklainnya2;
+      ImageView booklainnya2 = ViewBindings.findChildViewById(rootView, id);
+      if (booklainnya2 == null) {
+        break missingId;
+      }
+
+      id = R.id.booklainnya3;
+      ImageView booklainnya3 = ViewBindings.findChildViewById(rootView, id);
+      if (booklainnya3 == null) {
+        break missingId;
+      }
+
+      id = R.id.booklainnya4;
+      ImageView booklainnya4 = ViewBindings.findChildViewById(rootView, id);
+      if (booklainnya4 == null) {
+        break missingId;
+      }
+
+      id = R.id.button1;
+      Button button1 = ViewBindings.findChildViewById(rootView, id);
+      if (button1 == null) {
+        break missingId;
+      }
+
+      id = R.id.button2;
+      Button button2 = ViewBindings.findChildViewById(rootView, id);
+      if (button2 == null) {
+        break missingId;
+      }
+
+      id = R.id.button3;
+      Button button3 = ViewBindings.findChildViewById(rootView, id);
+      if (button3 == null) {
+        break missingId;
+      }
+
+      id = R.id.button4;
+      Button button4 = ViewBindings.findChildViewById(rootView, id);
+      if (button4 == null) {
+        break missingId;
+      }
+
+      id = R.id.button5;
+      Button button5 = ViewBindings.findChildViewById(rootView, id);
+      if (button5 == null) {
+        break missingId;
+      }
+
+      id = R.id.button6;
+      Button button6 = ViewBindings.findChildViewById(rootView, id);
+      if (button6 == null) {
+        break missingId;
+      }
+
+      id = R.id.button7;
+      Button button7 = ViewBindings.findChildViewById(rootView, id);
+      if (button7 == null) {
+        break missingId;
+      }
+
+      id = R.id.homebook1;
+      ImageView homebook1 = ViewBindings.findChildViewById(rootView, id);
+      if (homebook1 == null) {
+        break missingId;
+      }
+
+      id = R.id.homebook2;
+      ImageView homebook2 = ViewBindings.findChildViewById(rootView, id);
+      if (homebook2 == null) {
+        break missingId;
+      }
+
+      id = R.id.homebook3;
+      ImageView homebook3 = ViewBindings.findChildViewById(rootView, id);
+      if (homebook3 == null) {
+        break missingId;
+      }
+
+      id = R.id.homebook4;
+      ImageView homebook4 = ViewBindings.findChildViewById(rootView, id);
+      if (homebook4 == null) {
+        break missingId;
+      }
+
+      id = R.id.homebook5;
+      ImageView homebook5 = ViewBindings.findChildViewById(rootView, id);
+      if (homebook5 == null) {
+        break missingId;
+      }
+
+      id = R.id.homebook6;
+      ImageView homebook6 = ViewBindings.findChildViewById(rootView, id);
+      if (homebook6 == null) {
+        break missingId;
+      }
+
+      id = R.id.homebook7;
+      ImageView homebook7 = ViewBindings.findChildViewById(rootView, id);
+      if (homebook7 == null) {
+        break missingId;
+      }
+
+      id = R.id.textbook1;
+      TextView textbook1 = ViewBindings.findChildViewById(rootView, id);
+      if (textbook1 == null) {
+        break missingId;
+      }
+
+      id = R.id.textbook2;
+      TextView textbook2 = ViewBindings.findChildViewById(rootView, id);
+      if (textbook2 == null) {
+        break missingId;
+      }
+
+      id = R.id.textbook3;
+      TextView textbook3 = ViewBindings.findChildViewById(rootView, id);
+      if (textbook3 == null) {
+        break missingId;
+      }
+
+      id = R.id.textbook4;
+      TextView textbook4 = ViewBindings.findChildViewById(rootView, id);
+      if (textbook4 == null) {
+        break missingId;
+      }
+
+      id = R.id.textbook5;
+      TextView textbook5 = ViewBindings.findChildViewById(rootView, id);
+      if (textbook5 == null) {
+        break missingId;
+      }
+
+      id = R.id.textbook6;
+      TextView textbook6 = ViewBindings.findChildViewById(rootView, id);
+      if (textbook6 == null) {
+        break missingId;
+      }
+
+      id = R.id.textbook7;
+      TextView textbook7 = ViewBindings.findChildViewById(rootView, id);
+      if (textbook7 == null) {
+        break missingId;
+      }
+
+      id = R.id.textlainnya1;
+      TextView textlainnya1 = ViewBindings.findChildViewById(rootView, id);
+      if (textlainnya1 == null) {
+        break missingId;
+      }
+
+      id = R.id.textlainnya2;
+      TextView textlainnya2 = ViewBindings.findChildViewById(rootView, id);
+      if (textlainnya2 == null) {
+        break missingId;
+      }
+
+      id = R.id.textlainnya3;
+      TextView textlainnya3 = ViewBindings.findChildViewById(rootView, id);
+      if (textlainnya3 == null) {
+        break missingId;
+      }
+
+      id = R.id.textlainnya4;
+      TextView textlainnya4 = ViewBindings.findChildViewById(rootView, id);
+      if (textlainnya4 == null) {
+        break missingId;
+      }
+
+      return new FragmentBookBinding((ConstraintLayout) rootView, backbook, book, booklainnya,
+          booklainnya1, booklainnya2, booklainnya3, booklainnya4, button1, button2, button3,
+          button4, button5, button6, button7, homebook1, homebook2, homebook3, homebook4, homebook5,
+          homebook6, homebook7, textbook1, textbook2, textbook3, textbook4, textbook5, textbook6,
+          textbook7, textlainnya1, textlainnya2, textlainnya3, textlainnya4);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

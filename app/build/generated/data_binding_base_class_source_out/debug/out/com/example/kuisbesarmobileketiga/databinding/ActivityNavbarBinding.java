@@ -17,12 +17,12 @@ public final class ActivityNavbarBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ConstraintLayout main;
+  public final ConstraintLayout navbar;
 
   private ActivityNavbarBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ConstraintLayout main) {
+      @NonNull ConstraintLayout navbar) {
     this.rootView = rootView;
-    this.main = main;
+    this.navbar = navbar;
   }
 
   @Override
@@ -52,8 +52,8 @@ public final class ActivityNavbarBinding implements ViewBinding {
       throw new NullPointerException("rootView");
     }
 
-    ConstraintLayout main = (ConstraintLayout) rootView;
+    ConstraintLayout navbar = (ConstraintLayout) rootView;
 
-    return new ActivityNavbarBinding((ConstraintLayout) rootView, main);
+    return new ActivityNavbarBinding((ConstraintLayout) rootView, navbar);
   }
 }

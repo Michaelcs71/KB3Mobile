@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -54,6 +55,9 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final ImageView coming4;
 
   @NonNull
+  public final ConstraintLayout home;
+
+  @NonNull
   public final ImageView imagerekom1;
 
   @NonNull
@@ -63,10 +67,10 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final ImageView imagerekom3;
 
   @NonNull
-  public final ConstraintLayout main;
+  public final ImageView profilhome;
 
   @NonNull
-  public final ImageView profilhome;
+  public final ScrollView scrollhome;
 
   @NonNull
   public final EditText searchHome;
@@ -96,21 +100,21 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final TextView texthome3;
 
   @NonNull
-  public final TextView texthome4;
+  public final TextView textrekom;
 
   @NonNull
-  public final TextView textrekom;
+  public final TextView textseeall;
 
   private FragmentHomeBinding(@NonNull ConstraintLayout rootView, @NonNull Button category1,
       @NonNull Button category2, @NonNull Button category3, @NonNull Button category4,
       @NonNull Button category5, @NonNull HorizontalScrollView coming, @NonNull ImageView coming1,
       @NonNull ImageView coming2, @NonNull ImageView coming3, @NonNull ImageView coming4,
-      @NonNull ImageView imagerekom1, @NonNull ImageView imagerekom2,
-      @NonNull ImageView imagerekom3, @NonNull ConstraintLayout main, @NonNull ImageView profilhome,
-      @NonNull EditText searchHome, @NonNull TextView textcategory, @NonNull TextView textcoming1,
-      @NonNull TextView textcoming2, @NonNull TextView textcoming3, @NonNull TextView textcoming4,
-      @NonNull TextView texthome1, @NonNull TextView texthome2, @NonNull TextView texthome3,
-      @NonNull TextView texthome4, @NonNull TextView textrekom) {
+      @NonNull ConstraintLayout home, @NonNull ImageView imagerekom1,
+      @NonNull ImageView imagerekom2, @NonNull ImageView imagerekom3, @NonNull ImageView profilhome,
+      @NonNull ScrollView scrollhome, @NonNull EditText searchHome, @NonNull TextView textcategory,
+      @NonNull TextView textcoming1, @NonNull TextView textcoming2, @NonNull TextView textcoming3,
+      @NonNull TextView textcoming4, @NonNull TextView texthome1, @NonNull TextView texthome2,
+      @NonNull TextView texthome3, @NonNull TextView textrekom, @NonNull TextView textseeall) {
     this.rootView = rootView;
     this.category1 = category1;
     this.category2 = category2;
@@ -122,11 +126,12 @@ public final class FragmentHomeBinding implements ViewBinding {
     this.coming2 = coming2;
     this.coming3 = coming3;
     this.coming4 = coming4;
+    this.home = home;
     this.imagerekom1 = imagerekom1;
     this.imagerekom2 = imagerekom2;
     this.imagerekom3 = imagerekom3;
-    this.main = main;
     this.profilhome = profilhome;
+    this.scrollhome = scrollhome;
     this.searchHome = searchHome;
     this.textcategory = textcategory;
     this.textcoming1 = textcoming1;
@@ -136,8 +141,8 @@ public final class FragmentHomeBinding implements ViewBinding {
     this.texthome1 = texthome1;
     this.texthome2 = texthome2;
     this.texthome3 = texthome3;
-    this.texthome4 = texthome4;
     this.textrekom = textrekom;
+    this.textseeall = textseeall;
   }
 
   @Override
@@ -227,6 +232,8 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      ConstraintLayout home = (ConstraintLayout) rootView;
+
       id = R.id.imagerekom1;
       ImageView imagerekom1 = ViewBindings.findChildViewById(rootView, id);
       if (imagerekom1 == null) {
@@ -245,11 +252,15 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      ConstraintLayout main = (ConstraintLayout) rootView;
-
       id = R.id.profilhome;
       ImageView profilhome = ViewBindings.findChildViewById(rootView, id);
       if (profilhome == null) {
+        break missingId;
+      }
+
+      id = R.id.scrollhome;
+      ScrollView scrollhome = ViewBindings.findChildViewById(rootView, id);
+      if (scrollhome == null) {
         break missingId;
       }
 
@@ -307,23 +318,23 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.texthome4;
-      TextView texthome4 = ViewBindings.findChildViewById(rootView, id);
-      if (texthome4 == null) {
-        break missingId;
-      }
-
       id = R.id.textrekom;
       TextView textrekom = ViewBindings.findChildViewById(rootView, id);
       if (textrekom == null) {
         break missingId;
       }
 
+      id = R.id.textseeall;
+      TextView textseeall = ViewBindings.findChildViewById(rootView, id);
+      if (textseeall == null) {
+        break missingId;
+      }
+
       return new FragmentHomeBinding((ConstraintLayout) rootView, category1, category2, category3,
-          category4, category5, coming, coming1, coming2, coming3, coming4, imagerekom1,
-          imagerekom2, imagerekom3, main, profilhome, searchHome, textcategory, textcoming1,
-          textcoming2, textcoming3, textcoming4, texthome1, texthome2, texthome3, texthome4,
-          textrekom);
+          category4, category5, coming, coming1, coming2, coming3, coming4, home, imagerekom1,
+          imagerekom2, imagerekom3, profilhome, scrollhome, searchHome, textcategory, textcoming1,
+          textcoming2, textcoming3, textcoming4, texthome1, texthome2, texthome3, textrekom,
+          textseeall);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

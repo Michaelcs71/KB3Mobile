@@ -2,13 +2,14 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/home"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2A1C0F"
     tools:context=".HomeFragment">
 
     <ScrollView
+        android:id="@+id/scrollhome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -63,13 +64,12 @@
                 android:layout_marginTop="15dp">
                 <EditText
                     android:id="@+id/search_home"
-                    android:layout_width="370dp"
+                    android:layout_width="360dp"
                     android:layout_height="40dp"
                     android:hint="Search for books..."
                     android:background="@color/white"
                     android:layout_gravity="center"/>
             </LinearLayout>
-
 
             <TextView
                 android:id="@+id/textcategory"
@@ -88,17 +88,16 @@
                 android:id="@+id/category1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:background="#FFFFFF"
-                android:text="Motivation and Inspiration"
+                android:layout_marginTop="4dp"
+                android:text="Motivation / Inspiration"
                 app:layout_constraintStart_toStartOf="@id/textcategory"
                 app:layout_constraintTop_toBottomOf="@id/textcategory" />
+
             <Button
                 android:id="@+id/category2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#FFFFFF"
-                android:text="Sains and Physics"
+                android:text="Sains / Physics"
                 app:layout_constraintStart_toEndOf="@id/category1"
                 app:layout_constraintTop_toTopOf="@id/category1"
                 android:layout_marginStart="10dp"/>
@@ -106,7 +105,6 @@
                 android:id="@+id/category3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#FFFFFF"
                 android:text="Kesehatan"
                 app:layout_constraintStart_toStartOf="@id/category1"
                 app:layout_constraintTop_toBottomOf="@id/category1"
@@ -115,7 +113,6 @@
                 android:id="@+id/category4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#FFFFFF"
                 android:text="Horor"
                 app:layout_constraintStart_toEndOf="@id/category3"
                 app:layout_constraintTop_toTopOf="@id/category3"
@@ -124,8 +121,7 @@
                 android:id="@+id/category5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#FFFFFF"
-                android:text="Komik and Grafis"
+                android:text="Komik / Grafis"
                 app:layout_constraintStart_toEndOf="@id/category4"
                 app:layout_constraintTop_toTopOf="@id/category4"
                 android:layout_marginStart="10dp"/>
@@ -143,7 +139,7 @@
                 android:layout_marginTop="15dp"/>
 
             <TextView
-                android:id="@+id/texthome4"
+                android:id="@+id/textseeall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="See All"

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,7 +19,7 @@ import android.widget.TextView;
 public class HomeFragment extends Fragment {
 
 
-    TextView texthome3;
+    TextView textseeall;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -63,7 +64,26 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
+
+        // Initialize TextView
+        textseeall = view.findViewById(R.id.textseeall);
+
+        // Set OnClickListener for the TextView
+        textseeall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Create a new fragment to replace the current fragment
+                Fragment newFragment = new BookFragment();
+
+                // Replace the current fragment with the new fragment
+                FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                transaction.replace(R.id.scrollhome, newFragment);
+                transaction.addToBackStack(null); // Optional: add to back stack to allow back navigation
+                transaction.commit();
+            }
+        });
+        return view;
     }
 }
 

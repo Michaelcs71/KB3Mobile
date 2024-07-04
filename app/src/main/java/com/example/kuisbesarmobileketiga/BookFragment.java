@@ -1,5 +1,6 @@
 package com.example.kuisbesarmobileketiga;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -54,7 +55,10 @@ public class BookFragment extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
-
+    public void detailbook(View view) {
+        Intent intent = new Intent(getActivity(), halaman_login.class);
+        startActivity(intent);
+    }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

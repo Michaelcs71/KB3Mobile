@@ -28,6 +28,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.KuisBesarMobileKetiga" >
         <activity
+            android:name="com.example.kuisbesarmobileketiga.detailbook"
+            android:exported="false" />
+        <activity
             android:name="com.example.kuisbesarmobileketiga.viewallbook"
             android:exported="false" />
         <activity
@@ -37,7 +40,7 @@
             android:name="com.example.kuisbesarmobileketiga.AccountFragment"
             android:exported="false" />
         <activity
-            android:name="com.example.kuisbesarmobileketiga.HomeBook"
+            android:name="com.example.kuisbesarmobileketiga.HomeFragment"
             android:exported="false" />
         <activity
             android:name="com.example.kuisbesarmobileketiga.home"

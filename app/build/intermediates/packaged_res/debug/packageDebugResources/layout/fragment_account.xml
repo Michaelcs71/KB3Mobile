@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/akun"
+    android:id="@+id/account"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2A1C0F"
@@ -37,12 +37,14 @@
             android:layout_marginTop="140dp"
             android:layout_gravity="center_horizontal"
             android:text="lala_kiww"
+            android:textColor="@color/black"
             android:textStyle="bold"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="165dp"
+            android:textColor="@color/black"
             android:layout_gravity="center_horizontal"
             android:text="lala_kelompok2@gmail.com"/>
 
@@ -51,12 +53,14 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="200dp"
             android:layout_marginStart="30dp"
+            android:textColor="@color/black"
             android:text="😊  Share with Friend "/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="230dp"
             android:layout_marginStart="30dp"
+            android:textColor="@color/black"
             android:text="📝  Review "/>
         <TextView
             android:layout_width="wrap_content"
@@ -64,6 +68,7 @@
             android:layout_marginTop="200dp"
             android:layout_marginStart="250dp"
             android:text=">"
+            android:textColor="@color/black"
             android:textStyle="bold"/>
         <TextView
             android:layout_width="wrap_content"
@@ -71,6 +76,7 @@
             android:layout_marginTop="230dp"
             android:layout_marginStart="250dp"
             android:text=">"
+            android:textColor="@color/black"
             android:textStyle="bold"/>
 
         <Button
@@ -81,6 +87,7 @@
             android:layout_marginTop="260dp"
             android:background="#CB071952"
             android:backgroundTint="@color/white"/>
+
     </androidx.cardview.widget.CardView>
 
 </RelativeLayout>
