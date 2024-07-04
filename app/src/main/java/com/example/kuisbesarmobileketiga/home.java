@@ -2,23 +2,63 @@ package com.example.kuisbesarmobileketiga;
 
 import android.os.Bundle;
 
-import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-public class home extends AppCompatActivity {
+import android.view.MenuItem;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+public class home extends AppCompatActivity
+        implements BottomNavigationView.OnNavigationItemSelectedListener {
+
+    BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_home);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+        bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        bottomNavigationView
+                .setOnNavigationItemSelectedListener(this);
+        bottomNavigationView.setSelectedItemId(R.id.fr_home);
     }
+
+    HomeFragment homeFragment = new HomeFragment();
+    BookFragment bookFragment = new BookFragment();
+    HistoryFragment historyFragment = new HistoryFragment();
+    AccountFragment accountFragment = new AccountFragment();
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        int itemId = item.getItemId();
+
+        if (itemId == R.id.fr_home) {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.flFragment, homeFragment)
+                    .commit();
+            return true;
+        } else if (itemId == R.id.fr_book) {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.flFragment, bookFragment)
+                    .commit();
+            return true;
+        } else if (itemId == R.id.fr_history) {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.flFragment, historyFragment)
+                    .commit();
+            return true;
+        } else if (itemId == R.id.fr_account) {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.flFragment, accountFragment)
+                    .commit();
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 }

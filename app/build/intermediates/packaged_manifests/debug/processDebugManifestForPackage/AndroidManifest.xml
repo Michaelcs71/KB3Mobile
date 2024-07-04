@@ -18,6 +18,7 @@
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:dataExtractionRules="@xml/data_extraction_rules"
+        android:debuggable="true"
         android:extractNativeLibs="false"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
@@ -26,6 +27,18 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.KuisBesarMobileKetiga" >
+        <activity
+            android:name="com.example.kuisbesarmobileketiga.viewallbook"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kuisbesarmobileketiga.navbar"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kuisbesarmobileketiga.AccountFragment"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kuisbesarmobileketiga.HomeBook"
+            android:exported="false" />
         <activity
             android:name="com.example.kuisbesarmobileketiga.home"
             android:exported="false" />
@@ -45,10 +58,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <profileable
-            android:enabled="true"
-            android:shell="true" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"
