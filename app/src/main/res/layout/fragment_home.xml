@@ -63,13 +63,12 @@
                 android:layout_marginTop="15dp">
                 <EditText
                     android:id="@+id/search_home"
-                    android:layout_width="370dp"
+                    android:layout_width="360dp"
                     android:layout_height="40dp"
                     android:hint="Search for books..."
                     android:background="@color/white"
                     android:layout_gravity="center"/>
             </LinearLayout>
-
 
             <TextView
                 android:id="@+id/textcategory"
@@ -88,17 +87,18 @@
                 android:id="@+id/category1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="4dp"
                 android:background="#FFFFFF"
-                android:text="Motivation and Inspiration"
+                android:text="Motivation / Inspiration"
                 app:layout_constraintStart_toStartOf="@id/textcategory"
                 app:layout_constraintTop_toBottomOf="@id/textcategory" />
+
             <Button
                 android:id="@+id/category2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
-                android:text="Sains and Physics"
+                android:text="Sains / Physics"
                 app:layout_constraintStart_toEndOf="@id/category1"
                 app:layout_constraintTop_toTopOf="@id/category1"
                 android:layout_marginStart="10dp"/>
@@ -125,7 +125,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
-                android:text="Komik and Grafis"
+                android:text="Komik / Grafis"
                 app:layout_constraintStart_toEndOf="@id/category4"
                 app:layout_constraintTop_toTopOf="@id/category4"
                 android:layout_marginStart="10dp"/>

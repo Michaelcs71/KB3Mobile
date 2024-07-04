@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2A1C0F"
+    tools:context=".HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/profilhome"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                app:srcCompat="@drawable/profil2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/texthome1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                app:layout_constraintStart_toEndOf="@id/profilhome"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toTopOf="@id/profilhome"
+                android:layout_marginTop="7dp"/>
+
+            <TextView
+                android:id="@+id/texthome2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lala_kiww 👋🏼"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/profilhome"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toBottomOf="@id/texthome1"
+                android:layout_marginTop="4dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/profilhome"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="15dp">
+                <EditText
+                    android:id="@+id/search_home"
+                    android:layout_width="370dp"
+                    android:layout_height="40dp"
+                    android:hint="Search for books..."
+                    android:background="@color/white"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textcategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/profilhome"
+                android:layout_marginTop="70dp"
+                android:layout_marginStart="25dp"/>
+
+            <Button
+                android:id="@+id/category1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#FFFFFF"
+                android:text="Motivation and Inspiration"
+                app:layout_constraintStart_toStartOf="@id/textcategory"
+                app:layout_constraintTop_toBottomOf="@id/textcategory" />
+            <Button
+                android:id="@+id/category2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="Sains and Physics"
+                app:layout_constraintStart_toEndOf="@id/category1"
+                app:layout_constraintTop_toTopOf="@id/category1"
+                android:layout_marginStart="10dp"/>
+            <Button
+                android:id="@+id/category3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="Kesehatan"
+                app:layout_constraintStart_toStartOf="@id/category1"
+                app:layout_constraintTop_toBottomOf="@id/category1"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:id="@+id/category4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="Horor"
+                app:layout_constraintStart_toEndOf="@id/category3"
+                app:layout_constraintTop_toTopOf="@id/category3"
+                android:layout_marginStart="10dp"/>
+            <Button
+                android:id="@+id/category5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="Komik and Grafis"
+                app:layout_constraintStart_toEndOf="@id/category4"
+                app:layout_constraintTop_toTopOf="@id/category4"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/texthome3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Baru Datang"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/textcategory"
+                app:layout_constraintTop_toBottomOf="@id/category3"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/texthome4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See All"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/texthome3"
+                android:layout_marginEnd="20dp"/>
+
+            <!--baru datang-->
+            <HorizontalScrollView
+                android:id="@+id/coming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/texthome3"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                    <ImageView
+                        android:id="@+id/coming1"
+                        android:layout_width="100dp"
+                        android:layout_height="155dp"
+                        app:srcCompat="@drawable/img"/>
+                    <TextView
+                        android:id="@+id/textcoming1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dunia Shopie"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="155dp"
+                        android:layout_marginStart="-90dp"/>
+
+                    <ImageView
+                        android:id="@+id/coming2"
+                        android:layout_width="100dp"
+                        android:layout_height="155dp"
+                        app:srcCompat="@drawable/img_1"
+                        android:layout_marginStart="30dp"/>
+                    <TextView
+                        android:id="@+id/textcoming2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dunia Anna"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="155dp"
+                        android:layout_marginStart="-85dp"/>
+
+                    <ImageView
+                        android:id="@+id/coming3"
+                        android:layout_width="100dp"
+                        android:layout_height="155dp"
+                        app:srcCompat="@drawable/img_2"
+                        android:layout_marginStart="35dp"/>
+                    <TextView
+                        android:id="@+id/textcoming3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Laut Bercerita"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="155dp"
+                        android:layout_marginStart="-93dp" />
+
+                    <ImageView
+                        android:id="@+id/coming4"
+                        android:layout_width="100dp"
+                        android:layout_height="155dp"
+                        app:srcCompat="@drawable/img_18"
+                        android:layout_marginStart="35dp"/>
+                    <TextView
+                        android:id="@+id/textcoming4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pulang Pergi"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="155dp"
+                        android:layout_marginStart="-90dp" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!--rekomendasi-->
+            <TextView
+                android:id="@+id/textrekom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rekomendasi"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/coming"
+                app:layout_constraintStart_toStartOf="@id/texthome3"
+                android:layout_marginTop="15dp"/>
+
+            <ImageView
+                android:id="@+id/imagerekom1"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/img_11"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textrekom"
+                android:layout_marginTop="10dp"/>
+            <ImageView
+                android:id="@+id/imagerekom2"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/img_12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imagerekom1"
+                android:layout_marginTop="10dp" />
+            <ImageView
+                android:id="@+id/imagerekom3"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/img_13"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imagerekom2"
+                android:layout_marginTop="10dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
