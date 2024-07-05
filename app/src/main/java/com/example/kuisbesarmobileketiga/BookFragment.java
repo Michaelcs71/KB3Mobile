@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -55,14 +56,24 @@ public class BookFragment extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
-    public void detailbook(View view) {
-        Intent intent = new Intent(getActivity(), halaman_login.class);
-        startActivity(intent);
-    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_book, container, false);
+        View view = inflater.inflate(R.layout.fragment_book, container, false);
+
+        // Initialize ImageView and set OnClickListener
+        ImageView bookImageView = view.findViewById(R.id.booklainnya1);
+        bookImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Intent to DetailBookActivity
+                Intent intent = new Intent(getActivity(), detailbook.class);
+                startActivity(intent);
+            }
+        });
+
+        return view;
     }
 }

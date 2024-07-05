@@ -78,7 +78,7 @@ public class HomeFragment extends Fragment {
 
                 // Replace the current fragment with the new fragment
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
-                transaction.replace(R.id.scrollhome, newFragment);
+                transaction.replace(R.id.book, newFragment);
                 transaction.addToBackStack(null); // Optional: add to back stack to allow back navigation
                 transaction.commit();
             }

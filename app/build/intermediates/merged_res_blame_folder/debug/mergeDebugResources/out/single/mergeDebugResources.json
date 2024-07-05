@@ -16,12 +16,12 @@
         "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.kuisbesarmobileketiga.app-main-45:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.kuisbesarmobileketiga.app-debug-43:\\drawable_img_22.png.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.kuisbesarmobileketiga.app-main-45:\\drawable\\img_22.png"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.kuisbesarmobileketiga.app-debug-43:\\drawable_foto.jpg.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.kuisbesarmobileketiga.app-main-45:\\drawable\\foto.jpg"
     },
     {
-        "merged": "com.example.kuisbesarmobileketiga.app-debug-43:/layout_fragment_account.xml.flat",
-        "source": "com.example.kuisbesarmobileketiga.app-main-45:/layout/fragment_account.xml"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.kuisbesarmobileketiga.app-debug-43:\\drawable_img_22.png.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.kuisbesarmobileketiga.app-main-45:\\drawable\\img_22.png"
     },
     {
         "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.kuisbesarmobileketiga.app-debug-43:\\drawable_edit_text_background.xml.flat",
@@ -42,6 +42,10 @@
     {
         "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.kuisbesarmobileketiga.app-debug-43:\\drawable_logo_machung.png.flat",
         "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.kuisbesarmobileketiga.app-main-45:\\drawable\\logo_machung.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.kuisbesarmobileketiga.app-debug-43:\\layout_activity_readbook.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.kuisbesarmobileketiga.app-main-45:\\layout\\activity_readbook.xml"
     },
     {
         "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.kuisbesarmobileketiga.app-debug-43:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
@@ -266,6 +270,10 @@
     {
         "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.kuisbesarmobileketiga.app-debug-43:\\drawable_img_5.png.flat",
         "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.kuisbesarmobileketiga.app-main-45:\\drawable\\img_5.png"
+    },
+    {
+        "merged": "com.example.kuisbesarmobileketiga.app-debug-43:/layout_fragment_history.xml.flat",
+        "source": "com.example.kuisbesarmobileketiga.app-main-45:/layout/fragment_history.xml"
     },
     {
         "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.kuisbesarmobileketiga.app-debug-43:\\mipmap-xhdpi_ic_launcher.webp.flat",

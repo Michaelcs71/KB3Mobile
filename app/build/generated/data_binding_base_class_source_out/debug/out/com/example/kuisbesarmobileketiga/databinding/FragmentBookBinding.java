@@ -22,9 +22,6 @@ public final class FragmentBookBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final TextView backbook;
-
-  @NonNull
   public final ConstraintLayout book;
 
   @NonNull
@@ -117,21 +114,19 @@ public final class FragmentBookBinding implements ViewBinding {
   @NonNull
   public final TextView textlainnya4;
 
-  private FragmentBookBinding(@NonNull ConstraintLayout rootView, @NonNull TextView backbook,
-      @NonNull ConstraintLayout book, @NonNull TextView booklainnya,
-      @NonNull ImageView booklainnya1, @NonNull ImageView booklainnya2,
-      @NonNull ImageView booklainnya3, @NonNull ImageView booklainnya4, @NonNull Button button1,
-      @NonNull Button button2, @NonNull Button button3, @NonNull Button button4,
-      @NonNull Button button5, @NonNull Button button6, @NonNull Button button7,
-      @NonNull ImageView homebook1, @NonNull ImageView homebook2, @NonNull ImageView homebook3,
-      @NonNull ImageView homebook4, @NonNull ImageView homebook5, @NonNull ImageView homebook6,
-      @NonNull ImageView homebook7, @NonNull TextView textbook1, @NonNull TextView textbook2,
-      @NonNull TextView textbook3, @NonNull TextView textbook4, @NonNull TextView textbook5,
-      @NonNull TextView textbook6, @NonNull TextView textbook7, @NonNull TextView textlainnya1,
-      @NonNull TextView textlainnya2, @NonNull TextView textlainnya3,
-      @NonNull TextView textlainnya4) {
+  private FragmentBookBinding(@NonNull ConstraintLayout rootView, @NonNull ConstraintLayout book,
+      @NonNull TextView booklainnya, @NonNull ImageView booklainnya1,
+      @NonNull ImageView booklainnya2, @NonNull ImageView booklainnya3,
+      @NonNull ImageView booklainnya4, @NonNull Button button1, @NonNull Button button2,
+      @NonNull Button button3, @NonNull Button button4, @NonNull Button button5,
+      @NonNull Button button6, @NonNull Button button7, @NonNull ImageView homebook1,
+      @NonNull ImageView homebook2, @NonNull ImageView homebook3, @NonNull ImageView homebook4,
+      @NonNull ImageView homebook5, @NonNull ImageView homebook6, @NonNull ImageView homebook7,
+      @NonNull TextView textbook1, @NonNull TextView textbook2, @NonNull TextView textbook3,
+      @NonNull TextView textbook4, @NonNull TextView textbook5, @NonNull TextView textbook6,
+      @NonNull TextView textbook7, @NonNull TextView textlainnya1, @NonNull TextView textlainnya2,
+      @NonNull TextView textlainnya3, @NonNull TextView textlainnya4) {
     this.rootView = rootView;
-    this.backbook = backbook;
     this.book = book;
     this.booklainnya = booklainnya;
     this.booklainnya1 = booklainnya1;
@@ -192,12 +187,6 @@ public final class FragmentBookBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.backbook;
-      TextView backbook = ViewBindings.findChildViewById(rootView, id);
-      if (backbook == null) {
-        break missingId;
-      }
-
       ConstraintLayout book = (ConstraintLayout) rootView;
 
       id = R.id.booklainnya;
@@ -380,11 +369,11 @@ public final class FragmentBookBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentBookBinding((ConstraintLayout) rootView, backbook, book, booklainnya,
-          booklainnya1, booklainnya2, booklainnya3, booklainnya4, button1, button2, button3,
-          button4, button5, button6, button7, homebook1, homebook2, homebook3, homebook4, homebook5,
-          homebook6, homebook7, textbook1, textbook2, textbook3, textbook4, textbook5, textbook6,
-          textbook7, textlainnya1, textlainnya2, textlainnya3, textlainnya4);
+      return new FragmentBookBinding((ConstraintLayout) rootView, book, booklainnya, booklainnya1,
+          booklainnya2, booklainnya3, booklainnya4, button1, button2, button3, button4, button5,
+          button6, button7, homebook1, homebook2, homebook3, homebook4, homebook5, homebook6,
+          homebook7, textbook1, textbook2, textbook3, textbook4, textbook5, textbook6, textbook7,
+          textlainnya1, textlainnya2, textlainnya3, textlainnya4);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -3049,6 +3049,7 @@ int drawable design_ic_visibility_off 0x7f070086
 int drawable design_password_eye 0x7f070087
 int drawable design_snackbar_background 0x7f070088
 int drawable edit_text_background 0x7f070089
+int drawable foto 0x7f07010c
 int drawable gambarlobby 0x7f07008a
 int drawable ic_account 0x7f07008b
 int drawable ic_arrow_back_black_24 0x7f07008c
@@ -3275,6 +3276,7 @@ int id autoComplete 0x7f08005a
 int id autoCompleteToEnd 0x7f08005b
 int id autoCompleteToStart 0x7f08005c
 int id baca 0x7f08025d
+int id bacaanbuku 0x7f080264
 int id back_akun 0x7f08005d
 int id backbook 0x7f08024b
 int id barrier 0x7f08005e
@@ -3615,6 +3617,7 @@ int id progress_circular 0x7f08019e
 int id progress_horizontal 0x7f08019f
 int id radio 0x7f0801a0
 int id ratio 0x7f0801a1
+int id readbook 0x7f080265
 int id rectangles 0x7f0801a2
 int id register 0x7f0801a3
 int id registerButton 0x7f0801a4
@@ -3911,6 +3914,7 @@ int layout activity_halaman_register 0x7f0b001d
 int layout activity_home 0x7f0b001e
 int layout activity_main 0x7f0b0021
 int layout activity_navbar 0x7f0b0022
+int layout activity_readbook 0x7f0b007d
 int layout activity_viewallbook 0x7f0b0077
 int layout content_halaman_register 0x7f0b0023
 int layout custom_dialog 0x7f0b0024

@@ -4,29 +4,46 @@ package com.example.kuisbesarmobileketiga.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
+import android.widget.ImageView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.kuisbesarmobileketiga.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class FragmentHistoryBinding implements ViewBinding {
   @NonNull
-  private final FrameLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
-  public final FrameLayout history;
+  public final ImageView book;
 
-  private FragmentHistoryBinding(@NonNull FrameLayout rootView, @NonNull FrameLayout history) {
+  @NonNull
+  public final ConstraintLayout history;
+
+  @NonNull
+  public final TextView textbook1;
+
+  @NonNull
+  public final TextView textbook2;
+
+  private FragmentHistoryBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView book,
+      @NonNull ConstraintLayout history, @NonNull TextView textbook1, @NonNull TextView textbook2) {
     this.rootView = rootView;
+    this.book = book;
     this.history = history;
+    this.textbook1 = textbook1;
+    this.textbook2 = textbook2;
   }
 
   @Override
   @NonNull
-  public FrameLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -47,12 +64,34 @@ public final class FragmentHistoryBinding implements ViewBinding {
 
   @NonNull
   public static FragmentHistoryBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.book;
+      ImageView book = ViewBindings.findChildViewById(rootView, id);
+      if (book == null) {
+        break missingId;
+      }
+
+      ConstraintLayout history = (ConstraintLayout) rootView;
+
+      id = R.id.textbook1;
+      TextView textbook1 = ViewBindings.findChildViewById(rootView, id);
+      if (textbook1 == null) {
+        break missingId;
+      }
+
+      id = R.id.textbook2;
+      TextView textbook2 = ViewBindings.findChildViewById(rootView, id);
+      if (textbook2 == null) {
+        break missingId;
+      }
+
+      return new FragmentHistoryBinding((ConstraintLayout) rootView, book, history, textbook1,
+          textbook2);
     }
-
-    FrameLayout history = (FrameLayout) rootView;
-
-    return new FragmentHistoryBinding((FrameLayout) rootView, history);
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

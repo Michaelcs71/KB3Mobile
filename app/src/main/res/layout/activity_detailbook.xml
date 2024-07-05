@@ -39,7 +39,7 @@
     <TextView
         android:id="@+id/deskripsibook"
         android:layout_width="231dp"
-        android:layout_height="102dp"
+        android:layout_height="wrap_content"
         android:text="Era digital saat ini sangat berpengaruh terhadap kemajuan perkembangan ekonomi. Salah satu contohnya ialah sistem e-commerce yang kini banyak digunakan oleh perusahaan startup."
         android:textColor="#000080"
         android:textSize="11dp"
@@ -55,6 +55,10 @@
         android:id="@+id/baca"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Baca"/>
+        android:text="Baca"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/deskripsibook"
+        android:layout_marginTop="40dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

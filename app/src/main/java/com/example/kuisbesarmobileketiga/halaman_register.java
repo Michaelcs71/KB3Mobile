@@ -19,7 +19,8 @@ public class halaman_register extends AppCompatActivity {
     DatabaseKB3 db;
     EditText username, password;
     Button registerButton;
-    @SuppressLint("MissingInflatedId")
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +34,7 @@ public class halaman_register extends AppCompatActivity {
         db = new DatabaseKB3(this);
         username = findViewById(R.id.username);
         password = findViewById(R.id.password);
-        registerButton = findViewById(R.id.registerButton);
+        registerButton = findViewById(R.id.terimaRegis);
 
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override

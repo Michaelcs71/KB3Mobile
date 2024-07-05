@@ -3050,6 +3050,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable edit_text_background
+drawable foto
 drawable gambarlobby
 drawable ic_account
 drawable ic_arrow_back_black_24
@@ -3276,6 +3277,7 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id baca
+id bacaanbuku
 id back_akun
 id backbook
 id barrier
@@ -3616,6 +3618,7 @@ id progress_circular
 id progress_horizontal
 id radio
 id ratio
+id readbook
 id rectangles
 id register
 id registerButton
@@ -3912,6 +3915,7 @@ layout activity_halaman_register
 layout activity_home
 layout activity_main
 layout activity_navbar
+layout activity_readbook
 layout activity_viewallbook
 layout content_halaman_register
 layout custom_dialog

@@ -28,6 +28,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.KuisBesarMobileKetiga" >
         <activity
+            android:name="com.example.kuisbesarmobileketiga.readbook"
+            android:exported="false" />
+        <activity
             android:name="com.example.kuisbesarmobileketiga.detailbook"
             android:exported="false" />
         <activity

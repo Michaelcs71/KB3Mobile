@@ -12,8 +12,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 
 public class halaman_login extends AppCompatActivity {
 
@@ -32,43 +30,35 @@ public class halaman_login extends AppCompatActivity {
             return insets;
         });
 
-            db = new DatabaseKB3(this);
-            username = findViewById(R.id.username);
-            password = findViewById(R.id.password);
-            loginButton = findViewById(R.id.loginButton);
-            registerButton = findViewById(R.id.registerButton);
+        db = new DatabaseKB3(this);
+        username = findViewById(R.id.username);
+        password = findViewById(R.id.password);
+        loginButton = findViewById(R.id.loginButton);
+        registerButton = findViewById(R.id.registerButton);
 
-            loginButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    String Username = username.getText().toString();
-                    String Password = password.getText().toString();
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String Username = username.getText().toString();
+                String Password = password.getText().toString();
 
-                    if (db.checkUser(Username, Password)) {
-                        Toast.makeText(halaman_login.this, "Login successful, " + username + "!", Toast.LENGTH_SHORT).show();
-                    }
-                    else {
-                        Toast.makeText(halaman_login.this, "Invalid username or password", Toast.LENGTH_SHORT).show();
-                    }
+                if (db.checkUser(Username, Password)) {
+                    Toast.makeText(halaman_login.this, "Login successful, " + Username + "!" + "Terima Kasih", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(halaman_login.this, readbook.class); // Ganti dengan activity yang diinginkan
+                startActivity(intent);
+                finish();
+                } else {
+                    Toast.makeText(halaman_login.this, "Invalid username or password", Toast.LENGTH_SHORT).show();
                 }
-            });
+            }
+        });
 
-            registerButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    startActivity(new Intent(halaman_login.this, halaman_register.class));
-                }
-            });
-        }
-    private void openHomeFragment() {
-        // Create a new instance of the home fragment
-        Fragment homeFragment = new HomeFragment();
-
-        // Replace the current fragment with the home fragment
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.login, homeFragment);
-        transaction.addToBackStack(null); // Optional: add to back stack to allow back navigation
-        transaction.commit();
+        registerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(halaman_login.this, halaman_register.class);
+                startActivity(intent);
+            }
+        });
     }
 }
-

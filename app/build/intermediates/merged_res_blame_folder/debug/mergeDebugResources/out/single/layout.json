@@ -16,6 +16,10 @@
         "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.kuisbesarmobileketiga.app-main-45:\\layout\\fragment_account.xml"
     },
     {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.kuisbesarmobileketiga.app-mergeDebugResources-42:\\layout\\activity_readbook.xml",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.kuisbesarmobileketiga.app-main-45:\\layout\\activity_readbook.xml"
+    },
+    {
         "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.kuisbesarmobileketiga.app-mergeDebugResources-42:\\layout\\fragment_book.xml",
         "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.kuisbesarmobileketiga.app-main-45:\\layout\\fragment_book.xml"
     },
@@ -40,6 +44,10 @@
         "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.kuisbesarmobileketiga.app-main-45:\\layout\\activity_viewallbook.xml"
     },
     {
+        "merged": "com.example.kuisbesarmobileketiga.app-mergeDebugResources-42:/layout/fragment_history.xml",
+        "source": "com.example.kuisbesarmobileketiga.app-main-45:/layout/fragment_history.xml"
+    },
+    {
         "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.kuisbesarmobileketiga.app-mergeDebugResources-42:\\layout\\activity_detailbook.xml",
         "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.kuisbesarmobileketiga.app-main-45:\\layout\\activity_detailbook.xml"
     },
@@ -54,9 +62,5 @@
     {
         "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.kuisbesarmobileketiga.app-mergeDebugResources-42:\\layout\\fragment_first.xml",
         "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.kuisbesarmobileketiga.app-main-45:\\layout\\fragment_first.xml"
-    },
-    {
-        "merged": "com.example.kuisbesarmobileketiga.app-mergeDebugResources-42:/layout/fragment_account.xml",
-        "source": "com.example.kuisbesarmobileketiga.app-main-45:/layout/fragment_account.xml"
     }
 ]

@@ -6,6 +6,7 @@ dimen fab_margin
 drawable background_akun
 drawable button_background
 drawable edit_text_background
+drawable foto
 drawable gambarlobby
 drawable ic_account
 drawable ic_book
@@ -50,6 +51,7 @@ id account
 id action_FirstFragment_to_SecondFragment
 id action_SecondFragment_to_FirstFragment
 id baca
+id bacaanbuku
 id back_akun
 id backbook
 id book
@@ -116,6 +118,7 @@ id navbar
 id password
 id profil
 id profilhome
+id readbook
 id register
 id registerButton
 id scrollhome
@@ -153,6 +156,7 @@ layout activity_halaman_register
 layout activity_home
 layout activity_main
 layout activity_navbar
+layout activity_readbook
 layout activity_viewallbook
 layout content_halaman_register
 layout fragment_account

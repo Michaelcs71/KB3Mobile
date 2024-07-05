@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DatabaseKB3 extends SQLiteOpenHelper {
 
-    private static final String DATABASE_NAME = "UserDB.db";
+    private static final String DATABASE_NAME = "UserDBKB3.db";
     private static final String TABLE_NAME = "user_table";
     private static final String COL_1 = "ID";
     private static final String COL_2 = "USERNAME";
